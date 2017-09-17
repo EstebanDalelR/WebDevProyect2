@@ -16,7 +16,14 @@ class Tenants extends Component {
   render() {
     return (
       <div>
+        <table>
+          <tr>
+           <th>Apto</th>
+           <th>Nombre</th>
+           <th>Telefono</th>
+         </tr>
         {this.renderTenants()}
+        </table>
       </div>
     );
   }
