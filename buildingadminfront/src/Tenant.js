@@ -5,12 +5,13 @@ class Tenant extends Component {
     super (props);
   }
 
-
   render() {
     return (
-      <div>
-        Tenant
-      </div>
+      <tr>
+        <td className="aptNumber">{this.props.tenant.number}</td>
+        <td className="tenantName">{this.props.tenant.tenants[0].name}</td>
+        <td className="tenantPhone">{this.props.tenant.tenants[0].cel}</td>
+      </tr>
     );
   }
 }
