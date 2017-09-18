@@ -33,8 +33,7 @@ class App extends Component {
       <div className="App">
 
         <p className="App-intro">
-
-          Hola muuuundoooooo
+          Edificio Falso
         </p>
         <Tenants tenants={this.state.tenants}/>
       </div>
