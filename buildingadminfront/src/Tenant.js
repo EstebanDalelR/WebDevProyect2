@@ -5,7 +5,7 @@ class Tenant extends Component {
     super (props);
   }
 
-  renderTenants(){
+  renderPayments(){
     const payments = this.props.tenant.payments;
     const listItems = payments.map((payment, index) =>
        <b key={index} style={{color: payment.paid ? 'green' : 'red'}}>{payment.amount}</b>
@@ -22,7 +22,8 @@ class Tenant extends Component {
         <td className="aptNumber">{this.props.tenant.number}</td>
         <td className="tenantName">{this.props.tenant.tenants[0].name}</td>
         <td className="tenantPhone">{this.props.tenant.tenants[0].cel}</td>
-        {this.renderTenants()}
+        <td className="tenantPhone">{this.props.tenant.tenants[0].email}</td>
+        {this.renderPayments()}
       </tr>
     );
   }
