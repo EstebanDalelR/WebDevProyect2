@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongodb =require('mongodb');
 
-var url ="mongodb://localhost:27017/tenants";
+var url ="mongodb://localhost:5436/tenants";
 
 function getTenants(callback){
   mongodb.connect(url, (err,db) => {
