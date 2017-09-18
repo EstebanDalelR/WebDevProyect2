@@ -8,7 +8,7 @@ class Tenant extends Component {
   renderPayments(){
     const payments = this.props.tenant.payments;
     const listItems = payments.map((payment, index) =>
-       <b key={index} style={{color: payment.paid ? 'green' : 'red'}}>{payment.amount}</b>
+       <b key={index} style={{color: payment.paid ? 'green' : 'red'}}>{payment.amount+" "}</b>
     );
     return (
       <td>{listItems}</td>
