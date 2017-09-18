@@ -9,7 +9,7 @@ class BuildingInfo extends Component {
 
 
     return (
-      <b>13</b>
+      <b>0</b>
     );
   }
 
