@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Tenant from './Tenant.js';
-import Month from './Month.js';
+
 
 class Tenants extends Component {
   constructor(props) {
@@ -16,18 +16,27 @@ class Tenants extends Component {
     );
   }
 
-
+  renderMonths(){
+    const tenants = this.props.tenants;
+    const listItems = tenants.map((tenant, index) =>
+       <b key={index} >{tenant.payments[index].month+'/'+tenant.payments[index].year+" "}</b>
+    );
+    return (
+      <th>{listItems}</th>
+    );
+  }
 
   render() {
     return (
       <div>
         <table>
           <tbody>
-            <tr>
+            <tr className='TableTittle'>
               <th>Apto</th>
               <th>Nombre</th>
               <th>Telefono</th>
               <th>Correo</th>
+              {this.renderMonths()}
             </tr>
             {this.renderTenants()}
           </tbody>

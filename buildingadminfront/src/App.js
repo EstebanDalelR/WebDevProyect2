@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Tenants from './Tenants.js';
+import BuildingInfo from './BuildingInfo.js'
 
-import logo from './logo.svg';
+
 
 import './App.css';
 
@@ -36,6 +37,7 @@ class App extends Component {
           Edificio Falso
         </p>
         <Tenants tenants={this.state.tenants}/>
+        <BuildingInfo tenants={this.state.tenants}/>
       </div>
     );
   }
