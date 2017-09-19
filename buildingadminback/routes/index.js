@@ -1,14 +1,14 @@
-var express = require('express');
-var router = express.Router();
-var mongodb =require('mongodb');
+const express = require('express');
+const router = express.Router();
+const mongodb =require('mongodb');
 
-var url ="mongodb://165.227.187.208:4536/tenants";
+const url ="mongodb://165.227.187.208:4536/tenants";
 
 function getTenants(callback){
   mongodb.connect(url, (err,db) => {
     if (err) throw err;
 
-    var tenants =  db.collection("tenants");
+    let tenants =  db.collection("tenants");
     tenants.find({}).toArray((err2, tenants)=>{
       if (err2) throw err2;
 
