@@ -1,0 +1,23 @@
+Code Review por Sebastián Martínez
+
+Tuve problemas al intentar ver el demo, la version desplegada
+tiene una IP privada al parecer. Y al intentar desplegarlo
+localmente me dio errores, posiblemente por la base de datos.
+
+Por lo tanto solo me fije en el codigo.
+
+BACK
+
+Hace uso correcto de Express. Y conecta el build del front como
+archivos estaticos.
+Se conecta correctamente a Mongo.
+
+No encontre ningun error en el backend.
+
+FRONT
+
+Hace uso de por lo menos 3 componentes de React.
+
+Se podria organizar mejor la estructura de los archivos, por
+ejemplo poner todos los componentes de react dentro de una carpeta.
+Aparte de esto, no veo ningun problema.
