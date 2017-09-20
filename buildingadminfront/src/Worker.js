@@ -19,9 +19,9 @@ class Worker extends Component {
   render() {
     return (
       <tr>
-        <td className="tenantName">{this.props.tenant.tenants[0].name}</td>
-        <td className="tenantPhone">{this.props.tenant.tenants[0].cel}</td>
-        <td className="tenantPhone">{this.props.tenant.tenants[0].email}</td>
+        <td className="WorkerName">{this.props.tenant.tenants[0].name}</td>
+        <td className="WorkerPhone">{this.props.tenant.tenants[0].cel}</td>
+        <td className="WorkerPhone">{this.props.tenant.tenants[0].email}</td>
         <td className="aptNumber">{this.props.tenant.number}</td>
         {this.renderPayments()}
       </tr>

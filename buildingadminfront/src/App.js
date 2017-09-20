@@ -33,9 +33,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <p className="App-intro">
-          Edificio Falso
-        </p>
+        <h2>
+          Edificio Nueva Era
+        </h2>
         <Tenants tenants={this.state.tenants}/>
         <BuildingInfo tenants={this.state.tenants}/>
         <Workers workers={this.state.tenants} />

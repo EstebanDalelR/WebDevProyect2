@@ -15,11 +15,9 @@ class WorkersInfo extends Component {
 
   render() {
     return (
-      <div>
-        <p>Este mes se ha pagado: </p>
-        {this.addEarnings()}
-        <p>Hay problemas con los papeles de: </p>
-        {this.addEarnings()}
+      <div className = 'WorkersInfo'>
+        <p>Este mes se ha pagado: {this.addEarnings()}</p>
+        <p>Hay problemas con los papeles de: {this.addEarnings()}</p>
       </div>
     );
   }

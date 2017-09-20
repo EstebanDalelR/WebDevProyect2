@@ -29,9 +29,9 @@ class Tenants extends Component {
   render() {
     return (
       <div>
-        <table>
+        <table className='TenantsTable table-hover thead-default table-responsive'>
           <tbody>
-            <tr className='TableTittle'>
+            <tr>
               <th>Apto</th>
               <th>Nombre</th>
               <th>Telefono</th>

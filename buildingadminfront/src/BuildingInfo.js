@@ -16,8 +16,7 @@ class BuildingInfo extends Component {
   render() {
     return (
       <div>
-        <p>Este mes se ha recolectado: </p>
-        {this.addEarnings()}
+        <p>Este mes se ha recolectado: {this.addEarnings()}</p>
       </div>
     );
   }

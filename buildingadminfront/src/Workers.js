@@ -20,7 +20,7 @@ class Workers extends Component {
   render() {
     return (
       <div>
-        <table>
+        <table className = 'WorkersTable table-hover table-responsive thead-default'>
           <tbody>
             <tr className='TableTittle'>
               <th>Nombre</th>
